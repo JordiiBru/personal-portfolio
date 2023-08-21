@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import { DM_Sans } from 'next/font/google';
+import { Source_Sans_3 } from 'next/font/google';
 
-const myfont  = DM_Sans({ subsets: ['latin'], weight: ['500']})
+const myfont  = Source_Sans_3({ subsets: ['latin'], weight: ['400']})
 
 export const metadata: Metadata = {
   title: "Jordii's Portfolio",
