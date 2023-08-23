@@ -1,0 +1,81 @@
+.container {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeInUp 0.8s forwards ease-out;
+    justify-content: center;
+    height: 85vh;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .separator {
+    border-top: 2px solid #ccc;
+    margin: 0.2rem 0;
+    width: 0;
+    animation: drawSeparator 1.5s ease-out forwards;
+    position: relative;
+  }
+  
+  @keyframes drawSeparator {
+    to {
+      width: 100%;
+      left: 0;
+    }
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: purple;
+    transition: color 0.2s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .link:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* most phones */
+  @media (max-width: 600px) {
+    .container {
+      max-width: 80%;
+    }
+  
+    .title {
+      font-size: 2.3rem;
+    }
+  
+    .description {
+      font-size: 0.8rem;
+    }
+  
+    .icon {
+      width: 2.2rem;
+      margin-left: 0.7rem;
+    }
+  
+    .link {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
