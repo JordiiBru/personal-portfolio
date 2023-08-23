@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import { Source_Sans_3 } from 'next/font/google';
+import { Manrope, Inter } from 'next/font/google';
 
-const myfont  = Source_Sans_3({ subsets: ['latin'], weight: ['400']})
+const myfont  = Manrope({ subsets: ['latin'], weight: ['500']})
 
 export const metadata: Metadata = {
   title: "Jordii's Portfolio",

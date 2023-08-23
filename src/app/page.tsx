@@ -2,21 +2,22 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import twitter from '../public/twitter_icon.png';
-import github from '../public/github_icon.png';
-import linkedin from '../public/linkedin_icon.png';
-import insta from '../public/instagram.png';
+import twitter from '../public/icons/twitter_icon.png';
+import github from '../public/icons/github_icon.png';
+import linkedin from '../public/icons/linkedin.png';
+import insta from '../public/icons/instagram.png';
+
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <main className={styles.container}>
-
+      
       <h1 className={styles.title}>Jordi Bru</h1>
       <hr className={styles.separator} />
       <p className={styles.description} >Site Reliability Engineer Intern @ Mango</p>
 
-      <div className={styles.iconContainer}>
+      <div className={styles.iconContainer} >
         <a href="https://twitter.com/jordi_bru" target="_blank" rel="noopener noreferrer">
           <Image src={twitter} alt="Icon 1" width={50} height={50} className={styles.icon} />
         </a>

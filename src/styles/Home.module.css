@@ -6,40 +6,47 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 80vh;
-  opacity: 0; 
+  min-height: 82vh;
+  opacity: 0;
   transform: scale(0.95);
   animation: fadeInUp 0.8s forwards ease-out;
 }
 
 .title {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .separator {
   border: none;
-  border-top: 1px solid #ccc;
-  width: calc(100% + 20px);
-  margin: 0.5rem -10px;
+  border-top: 2px solid #ccc;
+  margin: 0.2rem auto;
+  width: 0;
+  animation: drawSeparator 1.5s ease-out forwards;
+}
+
+@keyframes drawSeparator {
+  to {
+    width: 100%;
+  }
 }
 
 .description {
   font-size: 1.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   font-style: italic;
 }
 
 .icon-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .icon {
   width: 3rem;
   height: auto;
-  margin: 1rem 2%;
+  margin: 0.7rem 2%;
   transition: transform 0.2s ease, translateY 0.2s ease; ;
 }
 
@@ -50,9 +57,9 @@
 .link {
   position: relative;
   display: inline-block;
-  font-size: 1.2rem;
-  margin-top: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-top: 1.4rem;
+  
   text-decoration: none;
   color: #333;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -80,17 +87,22 @@
   transform: translateY(-5px); 
 }
 
+/* most phones */
 @media (max-width: 600px) {
+  .container {
+    max-width: 80%;
+  }
+
   .title {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
   }
 
   .description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .icon {
-    width: 16%;
+    width: 2.2rem;
     margin-left: 0.7rem;
   }
 
