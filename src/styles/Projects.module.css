@@ -7,13 +7,32 @@
     opacity: 0;
     transform: scale(0.95);
     animation: fadeInUp 0.8s forwards ease-out;
-    justify-content: center;
+    justify-content: flex-start;
     height: 85vh;
   }
   
   .title {
     font-size: 1.6rem;
     margin-bottom: 0.6rem;
+  }
+
+  .divider {
+    display: flex;
+    align-items: auto;
+    border: 3px solid purple;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  .clickText {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .description:active {
+    background-color: #f0f0f0;
+    color: purple;
   }
   
   .separator {
@@ -46,6 +65,7 @@
   .description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
   }
   
   .link {
@@ -68,6 +88,7 @@
   
     .title {
       font-size: 2.3rem;
+      margin-top: 4rem;
     }
   
     .description {
@@ -75,8 +96,14 @@
     }
 
     .homeIcon {
+        position: absolute;
         width: 2.2rem;
+        height: auto;
         margin-left: 0.7rem;
+    }
+
+    .clickText {
+        font-size: 0.8rem;
     }
   
     .icon {
