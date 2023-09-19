@@ -5,7 +5,7 @@ import Link from 'next/link';
 import styles from '../../styles/Projects.module.css';
 
 export default function Projects() {
-  const [displayText, setDisplayText] = useState("Click a project...");
+  const [displayText, setDisplayText] = useState("Pick a project...");
   
   const PTI = () => setDisplayText("Kubernetes Community Cluster - The main goal of this university project was to introduce us to Kubernetes. We set up a K3S cluster on a university pc with it acting as the main node, and external nodes serving as worker nodes. All this in order to create a hardware resource sharing system that allows hosting services, being the users themselves the ones who provide these resources.");
   const AD = () => setDisplayText("Image storage and management application - This university project focuses on developing a distributed Java application that provides image storage and management capabilities. It allows users to register, upload and manage their images. The frontend interacts with a REST API-based backend, which in turn queries and updates a JavaDB to provide full functionality.");
@@ -31,7 +31,7 @@ export default function Projects() {
           <p className={styles.clickText}>{displayText}</p>
         </div>
         <p className={styles.more_description}>
-          You can find more projects and work from university laboratories <a href='https://github.com/JordiiBru?tab=repositories' className={styles.link}>here</a>.
+          You can find more of my previous work <a href='https://github.com/JordiiBru?tab=repositories' className={styles.link}>here</a>.
         </p>
       <div className={styles.separator}></div>
       </div>
