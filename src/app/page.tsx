@@ -1,11 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-
-import twitter from '../public/icons/twitter_icon.png';
-import github from '../public/icons/github_icon.png';
-import linkedin from '../public/icons/linkedin.png';
-
 import styles from '../styles/Home.module.css';
 
 export default function Home() {

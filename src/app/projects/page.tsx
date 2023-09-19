@@ -2,9 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from '../../styles/Projects.module.css';
-import homebutton from '../../public/icons/homebutton.png';
 
 export default function Projects() {
   const [displayText, setDisplayText] = useState("Click a project...");
@@ -32,7 +30,7 @@ export default function Projects() {
         <div className={styles.divider}>
           <p className={styles.clickText}>{displayText}</p>
         </div>
-        <p className={styles.description}>
+        <p className={styles.more_description}>
           You can find more projects and work from university laboratories <a href='https://github.com/JordiiBru?tab=repositories' className={styles.link}>here</a>.
         </p>
       <div className={styles.separator}></div>
