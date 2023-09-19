@@ -8,12 +8,12 @@ export default function About() {
   return (
     <main >
       <Link href='/'>
-        <Image src={homebutton} alt="Home" width={50} height={50} className={styles.homeIcon} />
+        <img src={'https://myportfolio-jordi.s3.eu-west-1.amazonaws.com/images/homebutton.png'} alt="Home" width={50} height={50} className={styles.homeIcon} />
       </Link>
       <div className={styles.container}>
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.description}>
-          Hi! My name's Jordi, a Computer Engineering student at UPC-FIB and current <a href="https://en.wikipedia.org/wiki/Site_reliability_engineering" className={styles.link}>Site Reliability Engineer</a> intern.
+          Hi! My name is Jordi, a Computer Engineering student at UPC-FIB and current <a href="https://en.wikipedia.org/wiki/Site_reliability_engineering" className={styles.link}>Site Reliability Engineer</a> intern.
           <br></br><br></br>
           With a keen interest in <a href="https://en.wikipedia.org/wiki/DevOps" className={styles.link}>DevOps</a> practices, my current focus is on learning how to manage services and their infrastructure, specializing in cloud (AWS), Terraform, and Kubernetes.
           <br></br><br></br>

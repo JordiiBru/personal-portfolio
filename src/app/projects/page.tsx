@@ -16,7 +16,7 @@ export default function Projects() {
   return (
     <main >
       <Link href='/'>
-        <Image src={homebutton} alt="Home" width={50} height={50} className={styles.homeIcon} />
+        <img src={'https://myportfolio-jordi.s3.eu-west-1.amazonaws.com/images/homebutton.png'} alt="Home" width={50} height={50} className={styles.homeIcon} />
       </Link>
       <div className={styles.container}>
         <h1 className={styles.title}>Projects</h1>
