@@ -10,7 +10,7 @@ locals {
   }
 }
 resource "aws_s3_bucket" "tf_portfolio" {
-  bucket = "personal-portfolio-jordibru"
+  bucket = "jordibru.cloud"
 
   tags = {
     terraform = "true"
