@@ -9,6 +9,9 @@ locals {
     ".woff2": "binary/octet-stream"
   }
 }
+
+## main bucket with the static website -----------
+
 resource "aws_s3_bucket" "tf_portfolio" {
   bucket = "jordibru.cloud"
 
@@ -76,5 +79,56 @@ resource "aws_s3_bucket_website_configuration" "website_config" {
 
   error_document {
     key = "404.html"
+  }
+}
+
+## redirect bucket www.jordibru.cloud -----------
+
+resource "aws_s3_bucket" "tf_portfolio_redirect" {
+  bucket = "www.jordibru.cloud"
+
+  tags = {
+    terraform = "true"
+    author    = "jordi"
+  }
+}
+
+resource "aws_s3_bucket_public_access_block" "public_redirect" {
+  bucket = aws_s3_bucket.tf_portfolio_redirect.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+}
+
+resource "aws_s3_bucket_policy" "allow_redirect_access_from_another_account" {
+  bucket = aws_s3_bucket.tf_portfolio_redirect.id
+  policy = data.aws_iam_policy_document.allow_redirect_access_from_another_account.json
+}
+
+data "aws_iam_policy_document" "allow_redirect_access_from_another_account" {
+  statement {
+    principals {
+      type        = "*"
+      identifiers = ["*"]
+    }
+
+    actions = [
+      "s3:GetObject",
+    ]
+
+    resources = [
+      "${aws_s3_bucket.tf_portfolio_redirect.arn}/*",
+    ]
+  }
+}
+
+resource "aws_s3_bucket_website_configuration" "redirect_bucket_website" {
+  bucket = aws_s3_bucket.tf_portfolio_redirect.id
+
+  redirect_all_requests_to {
+    host_name = "jordibru.cloud"
+    protocol  = "http"
   }
 }
