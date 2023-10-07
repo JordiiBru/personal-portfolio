@@ -12,10 +12,10 @@ export default function Home() {
 
       <div className={styles.iconContainer} >
         <a href="https://github.com/JordiiBru" target="_blank" rel="noopener noreferrer"> 
-          <img src={'http://jordibru.cloud/images/github_icon.png'} alt="Icon 2" width={50} height={50} className={styles.icon} />
+          <img src={'http://jordibru.cloud/images/github_icon.png'} alt="Icon 1" width={50} height={50} className={styles.icon} />
         </a>
-        <a href="https://twitter.com/jordi_bru" target="_blank" rel="noopener noreferrer">
-          <img src={'http://jordibru.cloud/images/twitter_icon.png'} alt="Icon 1" width={50} height={50} className={styles.icon} />
+        <a href="https://twitter.com/jordibru_" target="_blank" rel="noopener noreferrer">
+          <img src={'http://jordibru.cloud/images/twitter_icon.png'} alt="Icon 2" width={50} height={50} className={styles.icon} />
         </a>
         <a href="https://www.linkedin.com/in/jordi-bru-carci-65b9b7276/" target="_blank" rel="noopener noreferrer">
           <img src={'http://jordibru.cloud/images/linkedin.png'} alt="Icon 3" width={50} height={50} className={styles.icon} />
