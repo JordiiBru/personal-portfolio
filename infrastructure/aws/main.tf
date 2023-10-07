@@ -129,6 +129,6 @@ resource "aws_s3_bucket_website_configuration" "redirect_bucket_website" {
 
   redirect_all_requests_to {
     host_name = "jordibru.cloud"
-    protocol  = "http"
+    protocol  = "https"
   }
 }
