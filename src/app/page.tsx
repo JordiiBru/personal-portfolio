@@ -17,7 +17,7 @@ export default function Home() {
         <a href="https://twitter.com/jordibru_" target="_blank" rel="noopener noreferrer">
           <img src={'http://jordibru.cloud/images/twitter_icon.png'} alt="Icon 2" width={50} height={50} className={styles.icon} />
         </a>
-        <a href="https://www.linkedin.com/in/jordi-bru-carci-65b9b7276/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/jordi-bru-carci" target="_blank" rel="noopener noreferrer">
           <img src={'http://jordibru.cloud/images/linkedin.png'} alt="Icon 3" width={50} height={50} className={styles.icon} />
         </a>
       </div>

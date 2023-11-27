@@ -4,7 +4,7 @@ import styles from '../../styles/About.module.css';
 
 export default function About() {
   return (
-    <main >
+    <main>
       <Link href='/'>
         <img src={'http://jordibru.cloud/images/homebutton.png'} alt="Home" width={50} height={50} className={styles.homeIcon} />
       </Link>
@@ -17,10 +17,25 @@ export default function About() {
           <br></br><br></br>
           I relentlessly pursue what I am most passionate about in this sector, while dedicating myself to learning and creating efficient solutions. This is just the beggining :)
           <br></br><br></br>
-          You can reach out to me on <a href="https://www.linkedin.com/in/jordi-bru-carci-65b9b7276/" className={styles.link}>LinkedIn</a>.
+          You can reach out to me on <a href="https://www.linkedin.com/in/jordi-bru-carci/" className={styles.link}>LinkedIn</a>.
         </p>
       <div className={styles.separator}></div>
+      <br></br>
+      <div className={styles.iconcontainer}>
+          <div className={styles.iconRow}>
+            <img src='http://jordibru.cloud/images/kubernetes_icon.png' alt="Icon 1" className={styles.icon} />
+            <img src='http://jordibru.cloud/images/tf_icon.png' alt="Icon 2" className={styles.icon} />
+            <img src='http://jordibru.cloud/images/aws_icon.png' alt="Icon 3" className={styles.icon} />
+          </div>
+          <div className={styles.iconRow}>
+            <img src='http://jordibru.cloud/images/c_icon.png' alt="Icon 4" className={styles.icon} />
+            <img src='http://jordibru.cloud/images/java_icon.png' alt="Icon 5" className={styles.icon} />
+            <img src='http://jordibru.cloud/images/pyhton_icon.png' alt="Icon 6" className={styles.icon} />
+            <img src='http://jordibru.cloud/images/linux_icon.png' alt="Icon 7" className={styles.icon} />
+          </div>
+        </div>
       </div>
+      
     </main>
   );
 }
