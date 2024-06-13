@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    images: {
-        unoptimized: true,
-        domains: ['jordibru.cloud.s3.eu-west-1.amazonaws.com'],
-      }
-}
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+    domains: ['my-images.jordibru.cloud'],
+  },
+  
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

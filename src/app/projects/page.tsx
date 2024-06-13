@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <main >
       <Link href='/'>
-        <img src={'http://jordibru.cloud/images/homebutton.png'} alt="Home" width={50} height={50} className={styles.homeIcon} />
+        <img src={'https://s3.eu-west-1.amazonaws.com/my-images.jordibru.cloud/homebutton.png'} alt="Home" width={50} height={50} className={styles.homeIcon} />
       </Link>
       <div className={styles.container}>
         <h1 className={styles.title}>Projects</h1>
