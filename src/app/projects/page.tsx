@@ -12,6 +12,14 @@ export default function Projects() {
         <h1 className={styles.title}>Projects</h1>
         <div className={styles.separator}></div>
         <p className={styles.title_project}>
+          {'>'} Terraform Monorepo
+        </p>
+        <p className={styles.description}>
+          This project offers a scalable solution for managing <a className={styles.link}>Infrastructure as Code (IaC)</a> using <a className={styles.link}>Terraform</a>. 
+          This monorepo includes an automated CI/CD pipeline with <a className={styles.link}>Terragrunt</a>, <a className={styles.link}>TFLint</a>, <a className={styles.link}>TFSec</a>, and <a className={styles.link}>Infracost</a>, ensuring efficient, secure, and cost-effective infrastructure management and deployment. 
+          While designed to be cloud-agnostic, the current implementation is tailored for <a className={styles.link}>AWS</a>.
+        </p>
+        <p className={styles.title_project}>
           {'>'} Kubernetes Community Cluster
         </p>
         <p className={styles.description}>
