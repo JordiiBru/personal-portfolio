@@ -11,7 +11,7 @@ export default function About() {
       <div className={styles.container}>
         <h1 className={styles.title}>About Me</h1>
         <p className={styles.description}>
-          Hi! My name is Jordi, a Computer Engineering student at UPC-FIB and current <span className={styles.link}>Site Reliability Engineer</span>.
+          Hi! My name is Jordi, a Computer Engineering graduate from UPC-FIB and a current <span className={styles.link}>Site Reliability Engineer</span>.
           <br></br><br></br>
           With a keen interest in <span className={styles.link}>DevOps</span> practices, my current focus is on learning how to manage services and their infrastructure, specializing in cloud (AWS), Terraform, and Kubernetes.
           <br></br><br></br>
