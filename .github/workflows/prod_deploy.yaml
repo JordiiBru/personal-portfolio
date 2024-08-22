@@ -1,4 +1,4 @@
-name: Deploy to DEV
+name: Deploy to Production
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   id-token: write
 
 jobs:
-  statics_deployment:
+  production_deployment:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,4 +34,4 @@ jobs:
         role-to-assume: arn:aws:iam::522922866161:role/tfg-repo-base-cicd
     
     - name: Sync to S3
-      run: aws s3 sync ./out s3://dev-portfolio.jordibru.cloud --delete
+      run: aws s3 sync ./out s3://portfolio.jordibru.cloud --delete
